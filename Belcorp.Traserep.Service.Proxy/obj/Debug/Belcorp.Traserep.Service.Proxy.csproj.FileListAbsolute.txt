@@ -1,0 +1,4 @@
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Traserep.Service.Proxy\bin\Debug\Belcorp.Traserep.Service.Proxy.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Traserep.Service.Proxy\bin\Debug\Belcorp.Traserep.Service.Proxy.pdb
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Traserep.Service.Proxy\obj\Debug\Belcorp.Traserep.Service.Proxy.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Traserep.Service.Proxy\obj\Debug\Belcorp.Traserep.Service.Proxy.pdb

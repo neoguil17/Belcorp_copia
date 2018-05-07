@@ -1,0 +1,1 @@
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.DataAccess\obj\Debug\Belcorp.Infra.DataAccess.csprojResolveAssemblyReference.cache

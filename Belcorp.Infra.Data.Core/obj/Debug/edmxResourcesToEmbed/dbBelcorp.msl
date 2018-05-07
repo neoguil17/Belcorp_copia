@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BelcorpModelStoreContainer" CdmEntityContainer="BelcorpEntities">
+    <EntitySetMapping Name="Unidad">
+      <EntityTypeMapping TypeName="BelcorpModel.Unidad">
+        <MappingFragment StoreEntitySet="Unidad">
+          <ScalarProperty Name="NombreTipoUnidad" ColumnName="NombreTipoUnidad" />
+          <ScalarProperty Name="Modelo" ColumnName="Modelo" />
+          <ScalarProperty Name="Marca" ColumnName="Marca" />
+          <ScalarProperty Name="Placa" ColumnName="Placa" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

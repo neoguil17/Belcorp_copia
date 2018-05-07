@@ -1,0 +1,10 @@
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\obj\Debug\Belcorp.Presentation.Agent.csprojResolveAssemblyReference.cache
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\Belcorp.Presentation.Agent.dll.config
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\Belcorp.Presentation.Agent.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\Belcorp.Presentation.Agent.pdb
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\Belcorp.Service.DataContracts.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\ChannelAdam.Core.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\ChannelAdam.Wcf.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\bin\Debug\Belcorp.Service.DataContracts.pdb
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\obj\Debug\Belcorp.Presentation.Agent.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Presentation.Agent\obj\Debug\Belcorp.Presentation.Agent.pdb

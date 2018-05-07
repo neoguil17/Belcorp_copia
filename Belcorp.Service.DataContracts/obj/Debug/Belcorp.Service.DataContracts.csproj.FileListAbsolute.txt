@@ -1,0 +1,4 @@
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Service.DataContracts\bin\Debug\Belcorp.Service.DataContracts.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Service.DataContracts\bin\Debug\Belcorp.Service.DataContracts.pdb
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Service.DataContracts\obj\Debug\Belcorp.Service.DataContracts.dll
+c:\users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Service.DataContracts\obj\Debug\Belcorp.Service.DataContracts.pdb

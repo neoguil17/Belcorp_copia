@@ -1,0 +1,14 @@
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\obj\Debug\Belcorp.Infra.Data.Core.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Infra.Data.Core.dll.config
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Infra.Data.Core.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Infra.Data.Core.pdb
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Domain.Core.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Service.DataContracts.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Domain.Core.pdb
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\Belcorp.Service.DataContracts.pdb
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\obj\Debug\Belcorp.Infra.Data.Core.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Infra.Data.Core\obj\Debug\Belcorp.Infra.Data.Core.pdb

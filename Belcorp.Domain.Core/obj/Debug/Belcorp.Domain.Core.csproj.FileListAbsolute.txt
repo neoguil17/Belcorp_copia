@@ -1,0 +1,4 @@
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Domain.Core\bin\Debug\Belcorp.Domain.Core.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Domain.Core\bin\Debug\Belcorp.Domain.Core.pdb
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Domain.Core\obj\Debug\Belcorp.Domain.Core.dll
+C:\Users\lenovo\documents\visual studio 2015\Projects\Belcorp\Belcorp.Domain.Core\obj\Debug\Belcorp.Domain.Core.pdb
