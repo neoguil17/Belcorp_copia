@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Infra", "1.Infra", "{7EEA0D43-3502-4DC3-9BBD-3955451FEF48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{8E04BF53-4C08-4AC8-B73D-D176CF7CEA9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Application", "3.Application", "{B0D6C667-37F2-4885-9899-01135FA7723B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Service", "4.Service", "{F832F516-CFCD-47CA-9C3C-8B34A733D2CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Presentation", "5.Presentation", "{55AEC481-1DD4-40C3-B650-03CAD867CFAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Presentation.Web", "Belcorp.Presentation.Web\Belcorp.Presentation.Web.csproj", "{EF71FF8D-0678-410E-A1D7-9428143FF5F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Service.DataContracts", "Belcorp.Service.DataContracts\Belcorp.Service.DataContracts.csproj", "{437BA7F7-C4EF-40ED-98CB-F666C45E2286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Presentation.Agent", "Belcorp.Presentation.Agent\Belcorp.Presentation.Agent.csproj", "{E8B6E15C-F8CA-4120-9EEB-12694A93A961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Traserep.Service.Proxy", "Belcorp.Traserep.Service.Proxy\Belcorp.Traserep.Service.Proxy.csproj", "{46B3B08E-EBEF-475E-9519-4D3C091471C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Traserep.Service.MainContext", "Belcorp.Traserep.Service.MainContext\Belcorp.Traserep.Service.MainContext.csproj", "{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Domain.Core", "Belcorp.Domain.Core\Belcorp.Domain.Core.csproj", "{531D17B6-8384-478A-94BF-BEA0EB134A80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belcorp.Infra.Data.Core", "Belcorp.Infra.Data.Core\Belcorp.Infra.Data.Core.csproj", "{50D0139D-06A8-497E-8F0E-A5000A735338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF71FF8D-0678-410E-A1D7-9428143FF5F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF71FF8D-0678-410E-A1D7-9428143FF5F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF71FF8D-0678-410E-A1D7-9428143FF5F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF71FF8D-0678-410E-A1D7-9428143FF5F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437BA7F7-C4EF-40ED-98CB-F666C45E2286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437BA7F7-C4EF-40ED-98CB-F666C45E2286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437BA7F7-C4EF-40ED-98CB-F666C45E2286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437BA7F7-C4EF-40ED-98CB-F666C45E2286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B6E15C-F8CA-4120-9EEB-12694A93A961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B6E15C-F8CA-4120-9EEB-12694A93A961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B6E15C-F8CA-4120-9EEB-12694A93A961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B6E15C-F8CA-4120-9EEB-12694A93A961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B3B08E-EBEF-475E-9519-4D3C091471C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B3B08E-EBEF-475E-9519-4D3C091471C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B3B08E-EBEF-475E-9519-4D3C091471C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B3B08E-EBEF-475E-9519-4D3C091471C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531D17B6-8384-478A-94BF-BEA0EB134A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531D17B6-8384-478A-94BF-BEA0EB134A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531D17B6-8384-478A-94BF-BEA0EB134A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531D17B6-8384-478A-94BF-BEA0EB134A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D0139D-06A8-497E-8F0E-A5000A735338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D0139D-06A8-497E-8F0E-A5000A735338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D0139D-06A8-497E-8F0E-A5000A735338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D0139D-06A8-497E-8F0E-A5000A735338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF71FF8D-0678-410E-A1D7-9428143FF5F6} = {55AEC481-1DD4-40C3-B650-03CAD867CFAA}
+		{437BA7F7-C4EF-40ED-98CB-F666C45E2286} = {F832F516-CFCD-47CA-9C3C-8B34A733D2CB}
+		{E8B6E15C-F8CA-4120-9EEB-12694A93A961} = {55AEC481-1DD4-40C3-B650-03CAD867CFAA}
+		{46B3B08E-EBEF-475E-9519-4D3C091471C2} = {55AEC481-1DD4-40C3-B650-03CAD867CFAA}
+		{DE6F1E23-A53F-4CA0-8F94-E8FFBDF83436} = {F832F516-CFCD-47CA-9C3C-8B34A733D2CB}
+		{531D17B6-8384-478A-94BF-BEA0EB134A80} = {8E04BF53-4C08-4AC8-B73D-D176CF7CEA9E}
+		{50D0139D-06A8-497E-8F0E-A5000A735338} = {7EEA0D43-3502-4DC3-9BBD-3955451FEF48}
+	EndGlobalSection
+EndGlobal

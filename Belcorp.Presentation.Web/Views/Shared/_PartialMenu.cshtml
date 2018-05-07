@@ -1,0 +1,138 @@
+﻿@using Rep.Traserep.Presentation.Web.Strings;
+@using Rep.Traserep.Infra.CrossCutting.Net.Constants;
+@using Rep.Traserep.Presentation.Web.Utils;
+<ul class="sidebar-nav" data-open-speed="250" data-close-speed="200" data-easing="linear">
+    <li>
+        <a href="~/home/Index" title="Inicio">
+            <img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'>
+            <span class="nav-item-text">INICIO</span>
+        </a>
+    </li>
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.GestionarUnidades))
+    {
+        <li>
+            <a href="@Url.Action("index", "unidad")" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Gestión de Unidades</span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.RequisitosDeUnidades))
+    {
+        <li>
+            <a href="@Url.Action("RequisitoUnidad", "Unidad")" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Requisitos de Unidades</span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.GestionarPersonal))
+    {
+        <li>
+            <a href="@Url.Action("Index","Personal")" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Personal</span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.RequisitosDePersonal))
+    {
+        <li>
+            <a href="@Url.Action("Requisitos","Personal")" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Requisitos de personal</span></a>
+        </li>
+    }
+
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesConsultarSolicitudes))
+    {
+        <li>
+            <a href="@Url.Action("Index","Solicitud", new { index = true } )" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Mis Solicitudes de Autorización de Ingreso</span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesConsultarEstadoDeSolicitudes))
+    {
+        <li>
+            <a href="@Url.Action("Index","Solicitud", new { index = false } )" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Consulta de estados de solicitudes de Autorización de Ingreso</span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesAprobarDocumentosRequeridos))
+    {
+        <li>
+            <a href="@Url.Action("IndexAprobarDocumentos","Solicitud", new { modoDocumentos = true })" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'> <span class="nav-item-text">Aprobación de Documentación Requerida en las Solicitudes de Autorización de Ingreso </span></a>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesAutorizar))
+    {
+        <li>
+            <a href="@Url.Action("IndexAprobarDocumentos","Solicitud", new { modoDocumentos = false })" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Aprobación de las Solicitudes de Autorización de Ingreso</span></a>
+        </li>
+    }
+
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesVerificacionDeRequisitos))
+    {
+        <li>
+            <a href="@Url.Action("IndexRequisitoUnidad","Requisito")" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Verificación de Requisitos</span></a>
+        </li>
+    }
+
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesConsultarEstadoDeRequisitosRep))
+    {
+        <li>
+            <a href="@Url.Action("IndexEstadoRequisito","Requisito", new { modoProvedor = false })" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Consulta de Estado de Requisitos</span></a>
+        </li>
+    }
+
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.SolicitudesConsultarEstadoDeRequisitosProveedores))
+    {
+        <li>
+            <a href="@Url.Action("IndexEstadoRequisito","Requisito", new { modoProvedor = true })" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-inicio.png")'><span class="nav-item-text">Consulta de Estado de Requisitos</span></a>
+        </li>
+    }
+
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.PadreMantenimiento))
+    {
+        <li>
+            <a href="#" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-administracion-sistema.png")'><span class="nav-item-text">Administración</span></a>
+            <ul class="sub-nav" role="menu">
+                @{
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoEmpresasAreas))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Empresas", "Index", "Empresas")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoParametros))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Parámetros", "Index", "Parametro")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoProveedores))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Proveedores", "Index", "Proveedor")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoRequisitos))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Requisitos", "Index", "Requisito")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoInstalaciones))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Instalaciones", "Index", "Instalacion")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoFlujoDeAutorizacion))
+                    {
+                        <li>@Html.ActionLink("Asignación de Autorizaciones", "Index", "Autorizacion")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.MantenimientoRequisitos))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Autorizaciones", "IndexMantenimiento", "Autorizacion")</li>
+                    }
+                }
+            </ul>
+        </li>
+    }
+    @if (FacadeSession.ValidarPermiso(ConstantesPermisos.PadreSeguridad))
+    {
+        <li>
+            <a href="#" title=""><img src='@Url.Content("~/Content/img/icons/ico-menu-seguridad.png")'><span class="nav-item-text">Configuración</span></a>
+            <ul class="sub-nav" role="menu">
+                @{
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.SeguridadUsuarios))
+                    {
+                        <li>@Html.ActionLink("Mantenimiento de Usuarios", "Index", "Usuario")</li>
+                    }
+                    if (FacadeSession.ValidarPermiso(ConstantesPermisos.SeguridadPerfiles))
+                    {
+                        <li>@Html.ActionLink("Gestón de Permisos", "Index", "Perfil")</li>
+                    }
+                }
+            </ul>
+        </li>
+    }
+</ul>

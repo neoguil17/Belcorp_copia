@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ad331985-79cb-4177-ae95-d3670f16ffc8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Belcorp.Service.DataContracts" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57978/ServicioAdministracion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioAdministracion.xsd" MetadataType="Schema" ID="91d107d6-cf68-4b5a-9678-476f028883c8" SourceId="1" SourceUrl="http://localhost:57978/ServicioAdministracion.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioAdministracion1.xsd" MetadataType="Schema" ID="f65007b9-b2a9-4810-a667-80d7dc5c7f7d" SourceId="1" SourceUrl="http://localhost:57978/ServicioAdministracion.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioAdministracion.wsdl" MetadataType="Wsdl" ID="125264c2-5b1e-4a00-9033-e12195f03d83" SourceId="1" SourceUrl="http://localhost:57978/ServicioAdministracion.svc?wsdl" />
+    <MetadataFile FileName="ServicioAdministracion.disco" MetadataType="Disco" ID="6adfa7f1-e6ae-42a5-a162-de26c5c8d058" SourceId="1" SourceUrl="http://localhost:57978/ServicioAdministracion.svc?disco" />
+    <MetadataFile FileName="ServicioAdministracion2.xsd" MetadataType="Schema" ID="8a09790d-90ee-4969-bff6-bd4ff8ff41d8" SourceId="1" SourceUrl="http://localhost:57978/ServicioAdministracion.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

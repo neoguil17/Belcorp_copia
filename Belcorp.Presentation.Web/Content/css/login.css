@@ -1,0 +1,224 @@
+﻿@media (max-width:768px) {
+    .profile-cover-img {
+        height: 320px
+    }
+}
+
+.media .profile-thumb img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 3px rgba(0,0,0,.5)
+}
+
+.login-cover {
+    background: url(../img/login_cover.jpg) no-repeat !important;
+    background-size: cover !important;
+}
+
+.login-container .page-container {
+    padding-top: 80px;
+    position: static
+}
+
+    .login-container .page-container .login-form {
+        width: 380px
+    }
+
+        .login-container .page-container .login-form .thumb {
+            margin: 0 auto 0 auto
+        }
+
+.thumb h5 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.login-container .page-container .login-form, .login-container .page-container .registration-form {
+    margin: 0 auto 20px auto
+}
+
+@media (max-width:480px) {
+    .login-container .page-container .login-form, .login-container .page-container .registration-form {
+        width: 100%
+    }
+}
+
+.login-container .page-container .nav-tabs.nav-justified {
+    margin-bottom: 0
+}
+
+    .login-container .page-container .nav-tabs.nav-justified > li > a {
+        border-top: 0 !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #f5f5f5
+    }
+
+    .login-container .page-container .nav-tabs.nav-justified > li:first-child > a {
+        border-left: 0;
+        border-radius: 3px 0 0 0
+    }
+
+    .login-container .page-container .nav-tabs.nav-justified > li:last-child > a {
+        border-right: 0;
+        border-radius: 0 3px 0 0
+    }
+
+    .login-container .page-container .nav-tabs.nav-justified > li.active > a {
+        background-color: transparent
+    }
+
+@media (max-width:768px) {
+    .login-container .page-container .nav-tabs.nav-justified {
+        padding: 0;
+        border-width: 0 0 1px 0;
+        border-radius: 0
+    }
+
+        .login-container .page-container .nav-tabs.nav-justified:before {
+            content: none
+        }
+
+        .login-container .page-container .nav-tabs.nav-justified > li > a {
+            border-width: 0 !important
+        }
+}
+
+.login-container .footer {
+    left: 0;
+    right: 0
+}
+
+@media (max-width:768px) {
+    .login-options, .login-options .text-right {
+        text-align: center
+    }
+}
+
+.timeline {
+    position: relative;
+    height: 100%
+}
+
+    .timeline:after, .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2px;
+        background-color: #ccc;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        z-index: 1
+    }
+
+    .timeline:after {
+        top: auto;
+        bottom: 0
+    }
+
+.timeline-container {
+    position: relative;
+    padding-top: 10px;
+    margin-top: -10px;
+    padding-bottom: 1px
+}
+
+    .timeline-container:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        background-color: #ccc;
+        height: 100%;
+        width: 2px;
+        z-index: -1
+    }
+
+.timeline-row {
+    position: relative
+}
+
+.timeline-content {
+    margin-bottom: 20px
+}
+
+.timeline-date {
+    text-align: center;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px
+}
+
+    .timeline-date:after, .timeline-date:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2px;
+        background-color: #ccc;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        z-index: 1
+    }
+
+    .timeline-date:after {
+        top: auto;
+        bottom: 0
+    }
+
+.panel .timeline-date {
+    background-color: #fff
+}
+
+.timeline-time {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
+    position: relative;
+    margin-bottom: 20px
+}
+
+    .timeline-time:after, .timeline-time:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -2px;
+        background-color: #ccc;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%
+    }
+
+    .timeline-time:after {
+        top: auto;
+        bottom: 0
+    }
+
+.panel .timeline-time {
+    background-color: #fff
+}
+
+.timeline-time span {
+    display: block;
+    color: #999;
+    font-size: 12px
+}
+
+    .timeline-time span:before {
+        content: '\2022';
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+        top: 1px
+    }

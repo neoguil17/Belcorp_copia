@@ -1,0 +1,43 @@
+﻿
+@model string
+
+<div class="nbsp"></div>
+<div class="paginacion" data-bind="with: @Model">
+    <div data-bind="visible: Comp_HasElements()">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+            <div class="paginacion-total"> <span> Total de Registros </span><span class="numero" data-bind="text: Prop_Total"></span> </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="text-center">
+                <ul class="pagination custom-pagination">
+                    <li><a href="#" data-bind="css: { 'disabled-control': Comp_IsFirstPage }, event: { click: Event_GoToFirstPage }">&laquo;</a></li>
+                    <li><a href="#" data-bind="css: { 'disabled-control': Comp_IsFirstPage }, event: { click: Event_GoToPreviousPage }">&#60;</a></li>
+                    <li>
+                        <div class="pc-paginas">
+                            <select class="form-control" id="exampleFormControlSelect1"
+                                    data-bind="options: Comp_PageList, value: Prop_PageNumber, event: { change: Event_PageNumberChange }"></select>
+                        </div>                            
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="#" data-bind="css: { 'disabled-control': Comp_IsLastPage },
+                       event: { click: Event_GoToNextPage }">&#62;</a>
+                    <li style="display:inline-block;">
+                        <a href="#" data-bind="css: { 'disabled-control': Comp_IsLastPage },
+                       event: { click: Event_GoToLastPage }">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+            <div class="paginacion-cantidad">
+                <div class="pc-texto"> Cant. Pag </div>
+                <div class="pc-select">
+                    <select class="form-control" id="exampleFormControlSelect1"
+                            data-bind="options: Prop_PageSizeList,
+                    value: Prop_PageSize,
+                    event: { change: Event_PageSizeChange }"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

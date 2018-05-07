@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header-content">
+    <div class="header-content mb20">
+        <h2 class="alinea-titulo">@RenderSection("titulo", false)</h2>
+        <div class="nbsp"></div>
+    </div>
+    <div class="heading-elements">
+        <div class="heading-btn-group">
+            @RenderSection("acciones", false)
+        </div>
+    </div>
+</div>
+@RenderBody()
+
+@section scripts
+{
+    @RenderSection("scripts", false)
+}

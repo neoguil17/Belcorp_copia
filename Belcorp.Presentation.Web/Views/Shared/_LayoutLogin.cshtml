@@ -1,0 +1,47 @@
+﻿@using Rep.Traserep.Presentation.Web.Strings;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@string.Format(ResLayout.TituloPagina, ViewBag.Title)</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.select.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/plugins.css" rel="stylesheet" />
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/scrupulous.css" rel="stylesheet" />
+    <link href="~/Content/css/loader.css" rel="stylesheet" />
+    <link href="~/Content/css/site.css" rel="stylesheet" />
+    @Styles.Render("~/Content/login")
+</head>
+<body class="login-container login-cover">
+    <div class="loading" id="loadingDiv" style="display: none;">Loading&#8230;</div>
+    <div class="login-container login-cover" @*style="background:url(../../Content/img/login_cover.jpg) !important;  background-size: cover !important"*@>
+        <div class="page-container">
+            <div class="page-content">
+                <div class="content-wrapper">
+                    <div class="content pb-20">
+                        <div class="panel panel-body login-form">
+                            @RenderBody()
+                            <span class="help-block text-center no-margin">© TRASEREP @(DateTime.Now.Year.ToString()) | Derechos Reservados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/rep")
+    @Html.Partial("~/Views/Shared/_PartialConstantes.cshtml")
+    @RenderSection("scripts", required: false)
+    </body>
+</html>

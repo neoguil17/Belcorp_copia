@@ -1,0 +1,105 @@
+﻿@using Belcorp.Presentation.Web.Models;
+
+@{
+    ViewBag.Title = "Gestión de Unidades";
+    Layout = "~/Views/Shared/_LayoutBandeja.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-10">
+
+        <div class="row">
+            <div class="col-md-4 form-group">
+                <label>LabelPlaca</label>
+                <input class="form-control" type="text" data-bind="value: Prop_Filtros.Placa" />
+            </div>
+            <div class="col-md-4 form-group">
+                <label>LabelMarca</label>
+                <input class="form-control" type="text" data-bind="value: Prop_Filtros.Marca" />
+            </div>
+            <div class="col-md-4 form-group">
+                <label>Modelo</label>
+                <input class="form-control" type="text" data-bind="value: Prop_Filtros.Modelo" />
+            </div>
+            <div class="col-md-4 form-group">
+                <label>TipoUnidad</label>
+                <input class="form-control" type="text" data-bind="value: Prop_Filtros.NombreTipoUnidad" />
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="col-md-2">
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label></label>
+                <button class="btn bg-primary pull-right" data-bind="event: { click: Event_Search }">Buscar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-group">
+                <label></label>
+                <button class="btn bg-primary pull-right" data-bind="event: { click: Event_Clear }">Limpiar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+
+        <button class="btn bg-primary pull-right" data-bind="enable: Comp_PuedeEliminar(), event: { click: Event_Delete }">Eliminar</button>
+        <button class="btn bg-primary pull-right" data-bind="enable: Comp_PuedeEditar(), event: { click: Event_Edit }">Editar</button>
+        <button class="btn bg-primary pull-right" data-bind="event: { click: Event_Add }">Agregar</button>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover" data-bind="with: Prop_GridControl">
+        <thead>
+            <tr class="text-primary">
+                <th></th>
+                <th>PropiedadPlaca</th>
+                <th>PropiedadMarca</th>
+                <th>PropiedadModelo</th>
+                <th>PropiedadTipoUnidad</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: Prop_ResultList, visible: Comp_HasElements">
+            <tr>
+                <td><input type="checkbox" data-bind="checked: IsSelected, event: { click: $parent.Event_SelectItem }" /></td>
+                <td data-bind="text: Placa"></td>
+                <td data-bind="text: Marca"></td>
+                <td data-bind="text: Modelo"></td>
+                <td data-bind="text: NombreTipoUnidad"></td>
+                <td>
+                    <button type="button" class="btn btn-default" aria-label="Left Align" data-bind="event: { click: $root.Event_DisplayRequirements }">
+                        <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+        <tbody data-bind="visible: !Comp_HasElements()">
+            <tr><td colspan="9">Sin Elementos</td></tr>
+        </tbody>
+    </table>
+    @Html.Partial("~/Views/Shared/_PartialPaginacion.cshtml", "Prop_GridControl")
+</div>
+
+@Html.Partial("~/Views/Unidad/ParcialRegistro.cshtml", new ModelRegistroUnidad())
+
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/ViewModel/GridVM.js"></script>
+    <script type="text/javascript" src="~/Scripts/ViewModel/UnidadRegistroVM.js"></script>
+    <script type="text/javascript" src="~/Scripts/ViewModel/UnidadVM.js"></script>
+
+    <script type="text/javascript">
+        var usuarioMensajes = {
+            guardarTitulo: 'Guardar',
+            guardarMensaje: 'Guardar Unidad'
+        };
+
+        ko.applyBindings(new UnidadVM());
+    </script>
+}
+

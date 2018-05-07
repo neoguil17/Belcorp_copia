@@ -1,0 +1,86 @@
+﻿
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/plugins.css" rel="stylesheet" />
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/scrupulous.css" rel="stylesheet" />
+    <link href="~/Content/css/loader.css" rel="stylesheet" />
+    <link href="~/Content/css/site.css" rel="stylesheet" />
+</head>
+<body class="ball-scale-multiple top-bar-fixed left-sidebar-fixed page-footer boxed-layout">
+    <div class="loading" id="loadingDiv" style="display: none;">Loading&#8230;</div>
+    <!-- INICIO: CABECERA -->
+    <header class="top-bar">
+        <div class="container container-full">
+            <nav class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="sidebar-toggle"><a id="left-sidebar-toggle" href="#"> <img src="@Url.Content("~/Content/img/icons/ico-navbar.png")"> </a> </li>
+                    <li class="sidebar-hide"><a id="left-sidebar-hide" href="#"> <img src="@Url.Content("~/Content/img/icons/ico-navbar.png")"> </a> </li>
+                    <li class="sidebar-toggle separador-vertical-ico-menu"></li>
+                    <li class="page-title ml20 mr20">
+                        <h2><a class="navbar-brand" href="#"><img src="~/Content/img/login_abb1.png" width="100px" height="34px" alt=""></a></h2>
+                    </li>
+                    <li class="separador-vertical-ico-menu "></li>
+                    <li class="page-sistema ml20 hidden-xs">
+                        <h2>Sistema de Autorización de Ingreso a instalaciones</h2>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="usuario">
+                        
+                        <img class="avatar ml5" src="~/Content/img/avatars/1.jpg">
+                    </li>
+                    <li>
+                        @Html.ActionLink("Cerrar sesión", "LogOff", "Autenticacion")
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- FIN: CABECERA -->
+    <!-- INICIO: MENU PRINCIPAL -->
+    <div class="left-sidebar-wrapper">
+        <div class="left-sidebar left-sidebar-toggle">
+            <div class="scroll-area">
+                @*@{
+                    Html.RenderAction("_PartialMenu", "Autenticacion", new { area = "", id = "control_menu" });
+                };*@
+            </div>
+        </div>
+    </div>
+    <!-- FIN: MENU PRINCIPAL -->    
+    <!-- INICIO: CUERPO CONTENIDO -->
+    <div class="container container-full">
+        <div class="page-container">
+            <div class="main-content body-full">
+                <div class="content left-sidebar-toggle">
+                    <div class="container container-full ">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN: CUERPO CONTENIDO -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/rep")
+    @Html.Partial("~/Views/Shared/_PartialConstantes.cshtml")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

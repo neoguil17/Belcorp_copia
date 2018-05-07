@@ -1,0 +1,77 @@
+﻿@model Belcorp.Presentation.Web.Models.ModelRegistroUnidad
+
+@{
+    ViewBag.ModalId = "modalRegistroUnidad";
+    ViewBag.ModalTitle = "Registro de Unidad";
+    ViewBag.ModalSize = "modal-lg";
+    Layout = "~/Views/Shared/_LayoutModal.cshtml";
+}
+
+@using (Html.BeginForm("Guardar", "Unidad", FormMethod.Post, new { id = "formDatosUnidad" }))
+{
+    @Html.AntiForgeryToken()
+    <div data-bind="with: Prop_FormUnidadControl">
+        <input type="hidden" data-bind="value: Prop_UnidadActual().Id" />
+        <div class="panel panel-default">
+            <div class="panel-heading">Datos generales</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        @Html.LabelFor(x => x.Unidad.Placa)
+                        @Html.TextBoxFor(x => x.Unidad.Placa, true, htmlAttributes: new
+                           {
+                               maxlength = 100,
+                               data_bind = "value: Prop_UnidadActual().Placa",
+                               @class = "form-control",
+                               autocomplete = "off"
+                           })
+                        @Html.ValidationMessageFor(x => x.Unidad.Placa, null, new { @style = "color: red" })
+                    </div>
+                    <div class="col-md-6 form-group">
+                        @Html.LabelFor(x => x.Unidad.Marca)
+                        @Html.TextBoxFor(x => x.Unidad.Marca, true, htmlAttributes: new
+                           {
+                               data_bind = "value: Prop_UnidadActual().Marca",
+                               maxlength = 200,
+                               @class = "form-control",
+                               autocomplete = "off"
+                           })
+                        @Html.ValidationMessageFor(x => x.Unidad.Marca, null, new { @style = "color: red" })
+                    </div>
+                    <div class="col-md-6 form-group">
+                        @Html.LabelFor(x => x.Unidad.Modelo)
+                        @Html.TextBoxFor(x => x.Unidad.Modelo, true, htmlAttributes: new
+                           {
+                               data_bind = "value: Prop_UnidadActual().Modelo",
+                               maxlength = 200,
+                               @class = "form-control",
+                               autocomplete = "off"
+                           })
+                        @Html.ValidationMessageFor(x => x.Unidad.Modelo, null, new { @style = "color: red" })
+                    </div>
+                    <div class="col-md-6 form-group">
+                        @Html.LabelFor(x => x.Unidad.NombreTipoUnidad)
+                        @Html.TextBoxFor(x => x.Unidad.NombreTipoUnidad, true, htmlAttributes: new
+                     {
+                         data_bind = "value: Prop_UnidadActual().NombreTipoUnidad",
+                         maxlength = 200,
+                         @class = "form-control",
+                         autocomplete = "off"
+                     })
+                        @Html.ValidationMessageFor(x => x.Unidad.NombreTipoUnidad, null, new { @style = "color: red" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@section modalFooter
+{
+    <div data-bind="with: Prop_FormUnidadControl">
+        <button class="btn bg-primary pull-right" onclick="$('#formDatosUnidad').submit()">Guardar</button>
+        <button class="btn bg-primary pull-right" data-dismiss="modal">Cancelar</button>
+    </div>
+}
+

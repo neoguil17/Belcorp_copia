@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<div id="@ViewBag.ModalId" class="modal fade">
+    <div class="modal-dialog pop-up @ViewBag.ModalSize">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title" id="@(string.Format(ViewBag.ModalId, "_title"))"><i class="icon-menu7"></i> &nbsp;@Html.Raw(ViewBag.ModalTitle)</h5>
+            </div>
+            <div id="@(string.Concat(ViewBag.ModalId, "_content"))" class="modal-body">
+                @RenderBody()
+            </div>
+            @{ 
+                var hasFooter = (bool?)ViewBag.HasFooter;
+            }
+            @if (!hasFooter.HasValue || hasFooter.Value)
+            {
+                <div class="modal-footer">
+                    @RenderSection("modalFooter", false)
+                </div>
+            }            
+        </div>
+    </div>
+</div>
+

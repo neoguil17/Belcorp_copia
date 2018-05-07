@@ -1,0 +1,321 @@
+/* -----------------------------------------
+  Responsive styles
+	   ----------------------------------------- */
+/* -----------------------------------------
+	   Big screens
+ ----------------------------------------- */
+
+@media all and (max-width: 9999px) {
+/* Top bar */
+.top-bar .sidebar-hide {
+	display: none;
+}
+}
+ @media all and (min-width: 1024px) and (max-width: 1280px) {
+.contentTG {
+	padding: 25px 25px!important;
+}
+
+.radio-inline, .checkbox-inline {
+    padding-left: 0;
+    padding-right: 0px;
+    margin-left: -16px;
+}
+
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+}
+
+/* -----------------------------------------
+  Tablets
+ ----------------------------------------- */
+@media all and (max-width: 991px) {
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 25px 40px;
+}
+/* Profile */
+.profile-name {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.panel {
+	margin-bottom: 10px !important;
+}
+.contentTG {
+	padding: 25px 40px!important;
+}
+.TG-Group {
+	display: none;
+}
+
+.TGDash-Group {
+	display: none;
+}
+
+}
+/* -----------------------------------------
+ Most phones
+ ----------------------------------------- */
+ @media all and (max-width: 767px) {
+/* Top bar */
+
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 25px 40px;
+}
+.top-bar .navbar-nav {
+	float: left;
+	margin: 0;
+}
+.top-bar .navbar-nav li {
+	display: inline-block;
+	float: left;
+}
+.top-bar .navbar-nav li.open .dropdown-menu {
+	position: absolute;
+	float: left;
+	background-color: #fff;
+	border: 1px solid #cfd8dc;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.175);
+	width: 200px;
+}
+.top-bar .navbar-nav li.open .dropdown-menu.dropdown-lg {
+	width: 260px;
+}
+.top-bar .navbar-nav li.sidebar-hide {
+	display: inline-block;
+}
+.top-bar .navbar-nav li.sidebar-toggle {
+	display: none;
+}
+.top-bar .navbar-nav.navbar-right {
+	float: right;
+}
+/* Forms */
+.form-horizontal .control-label {
+	margin-bottom: 5px;
+}
+/* Tables */
+.table-responsive {
+	margin-bottom: 10px;
+}
+}
+ @media all and (max-width: 800px) {
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 25px 40px;
+}
+.panel-body {
+	display: block;
+}
+.top-bar .navbar-nav li.page-title {
+	display: none;
+}
+.alinea-icomodulos {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	margin: 0px 8px 0px 0px;
+}
+.alinea-titulo {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.alinea-subtitulo {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.alinea-botones {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.alinea-botones2 {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.alinea-botones-panel {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.alinea-botones-panel {
+	padding-top: 10px;
+}
+.text-labelprod-bandeja {
+	float: none;
+}
+.alinea-contenido-left {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.alinea-contenido-right {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+.paginacion-total {
+	clear: both;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.paginacion-cantidad {
+	clear: both;
+	width: 130px;
+	float: none;
+	margin: auto;
+	margin-top: 10px;
+}
+.TG-Group {
+	display: none;
+}
+
+.TGDash-Group {
+	display: none;
+}
+
+
+.modal-lg {
+	width:86%;
+	
+}
+
+}
+/* -----------------------------------------
+ Small devices 
+----------------------------------------- */
+@media all and (max-width: 600px) {
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 25px 40px;
+}
+.top-bar .user-name {
+	display: none;
+}
+/* Footer */
+#footer {
+	text-align: center;
+	height: 70px;
+}
+#footer .pull-left, #footer .pull-right {
+	float: none !important;
+}
+.usuario {
+	display: none!important;
+}
+.top-bar .navbar-nav li.page-title {
+	display: none;
+}
+
+.alto {
+        height: auto;
+    margin-bottom: 23px;
+}
+
+.radio-inline, .checkbox-inline {
+    padding-left: 0;
+    padding-right: 0px;
+}
+
+.radio-height {
+    min-height: 18px;
+}
+
+
+}
+/* -----------------------------------------
+ Small devices 
+ ----------------------------------------- */
+@media all and (max-width: 500px) {
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 5px 0px;
+}
+.header-content {
+}
+.header-content h2 {
+}
+.top-bar .navbar-nav li.page-title {
+	display: none;
+}
+/* Wizard */
+.bwizard.vertical-wizard .bwizard-steps, .bwizard .bwizard-steps {
+	border-right: none;
+	border-bottom: 1px solid #cfd8dc;
+	width: 100%;
+}
+.bwizard.vertical-wizard .wizard-form-wrap {
+	padding-left: 0;
+}
+.bwizard .bwizard-steps li {
+	display: inline-block;
+	width: 100%;
+	float: left;
+}
+/* invoice */
+.invoice-logo {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.invoice-from ul {
+	text-align: center;
+}
+.usuario {
+	display: none!important;
+}
+}
+/* -----------------------------------------
+  Crappy phones
+----------------------------------------- */
+
+@media all and (max-width: 400px) {
+.top-bar-search-form {
+	margin-left: 0 !important;
+}
+h2 {
+	font-size: 16px;
+}
+.page-container .main-content .content {
+	position: relative;
+	margin-left: 240px;
+	padding: 0px 0px 0px 0px;
+}
+.usuario {
+	display: none!important;
+}
+.TG-Group {
+	display: none;
+}
+
+.TGDash-Group {
+	display: none;
+}
+
+}
+
+
+@media all and (max-width: 360px) {
+
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+}
