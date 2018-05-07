@@ -9,6 +9,7 @@ namespace Belcorp.Presentation.Web
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            //test
         }
     }
 }
